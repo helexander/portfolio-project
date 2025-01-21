@@ -1,0 +1,30 @@
+.tabs {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+
+	button {
+		background: #f8f9fa; /* Light background for better contrast */
+		color: #333;
+		padding: 0.8rem 1.5rem;
+		margin: 0 0.5rem;
+		border: 1px solid #ddd; /* Subtle border */
+		border-radius: 50px; /* Rounded corners */
+		cursor: pointer;
+		font-size: 1rem;
+		transition: all 0.3s ease; /* Smooth transition */
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+		&:hover {
+			background: #007bff;
+			color: #fff;
+			box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Emphasized shadow */
+		}
+
+		&.active {
+			background: #007bff; /* Primary color for active state */
+			color: #fff;
+			box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+		}
+	}
+}

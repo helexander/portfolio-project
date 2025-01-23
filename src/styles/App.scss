@@ -1,3 +1,5 @@
+@import 'variables';
+
 .app {
 	background: linear-gradient(to bottom, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 	display: flex;

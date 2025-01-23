@@ -1,18 +1,35 @@
 import React from 'react';
+import awsLogo from '../assets/images/aws-logo.png';
+import databricksLogo from '../assets/images/databricks-logo.png';
+import atlassianLogo from '../assets/images/atlassian-logo.png';
 import '../styles/Certifications.scss';
 
 const Certifications = () => {
     const certifications = [
         {
             id: 1,
-            name: "AWS Solutions Architect Associate",
-            issuer: "Amazon Web Services",
-            issueDate: "Jan 2024",
-            logo: "/images/aws-logo.png", // Add your certification logos
-            verificationLink: "https://www.credly.com/your-badge-url",
-            skills: ["Cloud Architecture", "AWS Services", "Solution Design"]
+            name: "Databricks Fundamentals Accreditation",
+            issuer: "Databricks",
+            issueDate: "2024",
+            logo: databricksLogo,
+            skills: ["Data Engineering", "Data Analytics"]
         },
-        // Add more certifications as needed
+        {
+            id: 2,
+            name: "AWS Cloud Practitioner Essentials",
+            issuer: "AWS Training",
+            issueDate: "2024",
+            logo: awsLogo,
+            skills: ["AWS Services", "Cloud Architecture"]
+        },
+        {
+            id: 3,
+            name: "Jira Fundamentals",
+            issuer: "Atlassian",
+            issueDate: "2024",
+            logo: atlassianLogo,
+            skills: ["Project Management", "Agile", "Issue Tracking"]
+        }
     ];
 
     return (
@@ -38,9 +55,6 @@ const Certifications = () => {
                         <div className="certification-details">
                             <div className="date-info">
                                 <p>Issued: {cert.issueDate}</p>
-                                {cert.expiryDate && (
-                                    <p>Expires: {cert.expiryDate}</p>
-                                )}
                             </div>
 
                             <div className="skills-container">
@@ -50,17 +64,6 @@ const Certifications = () => {
                                     </span>
                                 ))}
                             </div>
-
-                            {cert.verificationLink && (
-                                <a
-                                    href={cert.verificationLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="verify-button"
-                                >
-                                    Verify Certificate
-                                </a>
-                            )}
                         </div>
                     </div>
                 ))}

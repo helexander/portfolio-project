@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../assets/resume/Jeremy_Resume_2024_SE.pdf';
 import '../styles/Contact.scss';
 
 const Contact = () => {
@@ -12,9 +13,9 @@ const Contact = () => {
 
                 <div className="contact-options">
                     <a
-                        href="/path-to-your-resume.pdf"
+                        href={resume}
                         className="resume-button"
-                        download="YourName-Resume.pdf"
+                        download="Jeremy_Resume_2024_SE.pdf"
                     >
                         <i className="fas fa-file-download"></i>
                         Download Resume
@@ -22,7 +23,7 @@ const Contact = () => {
 
                     <div className="contact-links">
                         <a
-                            href="mailto:your.email@example.com"
+                            href="jeremychee97@gmail.com"
                             className="contact-link email"
                         >
                             <i className="fas fa-envelope"></i>
@@ -30,7 +31,7 @@ const Contact = () => {
                         </a>
 
                         <a
-                            href="https://linkedin.com/in/your-profile"
+                            href="https://www.linkedin.com/in/jeremy-chee/"
                             className="contact-link linkedin"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -40,7 +41,7 @@ const Contact = () => {
                         </a>
 
                         <a
-                            href="https://github.com/your-username"
+                            href="https://github.com/jeremychee97"
                             className="contact-link github"
                             target="_blank"
                             rel="noopener noreferrer"

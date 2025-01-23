@@ -1,0 +1,151 @@
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	padding: 20px;
+	backdrop-filter: blur(5px);
+}
+
+.modal-content {
+	background: white;
+	padding: 2.5rem;
+	border-radius: 16px;
+	max-width: 800px;
+	width: 90%;
+	max-height: 90vh;
+	overflow-y: auto;
+	position: relative;
+	animation: modalFadeIn 0.3s ease;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #c0c0c0;
+		border-radius: 4px;
+
+		&:hover {
+			background: #a0a0a0;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		color: #2d3436;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	h3 {
+		color: #636e72;
+		margin: 0.5rem 0;
+		font-size: 1.4rem;
+	}
+
+	h4 {
+		color: #2d3436;
+		margin: 1.5rem 0 1rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	background: #f8f9fa;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	padding: 0.5rem;
+	color: #636e72;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
+
+	&:hover {
+		background: #e9ecef;
+		color: #2d3436;
+		transform: rotate(90deg);
+	}
+}
+
+.modal-period {
+	color: #007bff;
+	font-weight: 500;
+	margin: 0.5rem 0 2rem;
+	font-size: 1.1rem;
+}
+
+.modal-details {
+	margin-top: 2rem;
+
+	ul {
+		margin: 0.5rem 0;
+		padding-left: 1.5rem;
+
+		li {
+			margin: 0.75rem 0;
+			color: #636e72;
+			line-height: 1.6;
+			font-size: 1rem;
+
+			&::marker {
+				color: #007bff;
+			}
+		}
+	}
+}
+
+.tech-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: 1rem;
+}
+
+.tech-tag {
+	background: #f0f7ff;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	color: #007bff;
+	font-weight: 500;
+	transition: all 0.2s ease;
+
+	&:hover {
+		background: #007bff;
+		color: white;
+		transform: translateY(-2px);
+	}
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -28,6 +28,10 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
+	margin-top: 60px;
+	@media (max-width: 768px) {
+		margin-top: 0;
+	}
 }
 
 .hero-section,

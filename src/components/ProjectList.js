@@ -1,8 +1,8 @@
 import React from 'react';
-import Slider from 'react-slick'; // Slick carousel import
+import Slider from 'react-slick';
 import projects from '../data/projects';
 import '../styles/ProjectList.scss';
-import ProjectCard from './ProjectCard';
+import FlipCard from './FlipCard';
 
 const ProjectList = ({ category }) => {
     const filteredProjects = projects.filter(
@@ -13,37 +13,36 @@ const ProjectList = ({ category }) => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2, // Show 2 cards on large screens
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 6000,
         pauseOnHover: true,
+        arrows: true,
         responsive: [
             {
-                breakpoint: 1024, // Medium screens (less than 1024px)
+                breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1, // Show 1 card
-                },
+                    slidesToShow: 1,
+                }
             },
             {
-                breakpoint: 768, // Small screens (less than 768px)
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1, // Show 1 card
-                },
+                    slidesToShow: 1,
+                }
             },
         ],
     };
 
     return (
-        <section>
-            <Slider {...settings}>
-                {filteredProjects.map((project) => (
-                    <div key={project.id} className="project-list">
-                        <ProjectCard project={project} />
-                    </div>
-                ))}
-            </Slider>
-        </section>
+        <Slider {...settings} className='slick-slider'>
+            {filteredProjects.map((project) => (
+                <div key={project.id} className="project-list">
+                    <FlipCard project={project} />
+                </div>
+            ))}
+        </Slider>
     );
 };
 

@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import Certifications from './components/Certifications';
+import Certifications from './components/Certification';
 import Contact from './components/Contact';
 
 const App = () => {

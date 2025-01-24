@@ -10,8 +10,8 @@ const Projects = () => {
     };
 
     return (
-        <main id="projects">
-            <div className="tabs">
+        <main >
+            <div className="tabs" id="projects">
                 <button
                     onClick={() => handleTabChange('Scripts')}
                     className={selectedTab === 'Scripts' ? 'active' : ''}

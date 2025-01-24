@@ -132,6 +132,9 @@
 	position: relative;
 	width: 100%;
 	cursor: pointer;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
 
 	h3 {
 		margin: 0;
@@ -158,6 +161,8 @@
 		font-size: 0.95rem;
 		color: #636e72;
 		line-height: 1.5;
+		flex-grow: 1;
+		overflow-y: auto;
 	}
 }
 
@@ -179,5 +184,31 @@
 	100% {
 		transform: translate(-50%, -50%) scale(1);
 		box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+	}
+}
+
+@media (max-width: 1200px) {
+	.timeline-content {
+		min-height: 230px;
+	}
+
+	.timeline-container {
+		padding: 0;
+	}
+
+	.timeline {
+		flex-direction: column;
+		padding: 2rem 0;
+		margin: 0 20px;
+		min-height: 100%;
+
+		&::before {
+			left: 50%;
+			top: 0;
+			bottom: 0;
+			width: 2px;
+			height: 100%;
+			background: linear-gradient(to bottom, transparent, #e0e0e0 15%, #e0e0e0 85%, transparent);
+		}
 	}
 }

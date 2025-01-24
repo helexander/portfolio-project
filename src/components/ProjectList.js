@@ -35,8 +35,7 @@ const ProjectList = ({ category }) => {
     };
 
     return (
-        <section id="projects">
-            <h2>{category}</h2>
+        <section>
             <Slider {...settings}>
                 {filteredProjects.map((project) => (
                     <div key={project.id} className="project-list">

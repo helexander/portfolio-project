@@ -34,8 +34,7 @@ const Experience = () => {
             location: "Hong Kong",
             responsibilities: [
                 "Identify opportunities and generate leads through networking at trade shows",
-                "Build and maintain company's Shopify website",
-                "Participate in international exhibitions for lead generation"
+                "Build and maintain company's Shopify website"
             ],
             achievements: [
                 "Assisted in Christmas exhibition preparation attracting international clients",

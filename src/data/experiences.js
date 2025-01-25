@@ -1,10 +1,17 @@
+import glintechLogo from "../assets/images/glintechLogo.jpeg";
+import nologyLogo from "../assets/images/nologyLogo.png";
+import truescopeLogo from "../assets/images/truescopeLogo.png";
+import huaChenLogo from "../assets/images/HuaChenLogo.png";
+
 const experiences = [
     {
         id: 1,
         title: "Data Operations Executive",
-        company: "Truescope",
+        company: "Truescope Singapore",
+        short_company_name: "Truescope Singapore",
         period: "June 2024 - Present",
         description: "Leading data operations and process improvements in Singapore",
+        companyLogo: truescopeLogo,
         location: "Singapore",
         responsibilities: [
             "Identify and implement process improvements with scripts coded in Python and JavaScript",
@@ -22,8 +29,10 @@ const experiences = [
         id: 2,
         title: "Business Development Specialist",
         company: "HuaChen Trading (Hong Kong) Limited",
+        short_company_name: "HuaChen Trading",
         period: "Sep 2023 - May 2024",
         description: "Freelance business development and e-commerce specialist",
+        companyLogo: huaChenLogo,
         location: "Hong Kong",
         responsibilities: [
             "Identify opportunities and generate leads through networking at trade shows",
@@ -40,8 +49,10 @@ const experiences = [
         id: 3,
         title: "Junior Software Engineer",
         company: "Glintech",
+        short_company_name: "Glintech",
         period: "Aug 2023 - Jan 2024",
         description: "Development within Atlassian ecosystem",
+        companyLogo: glintechLogo,
         location: "Australia",
         responsibilities: [
             "Develop and enhance tools within Atlassian ecosystem (Confluence and Jira)",
@@ -58,9 +69,11 @@ const experiences = [
     {
         id: 4,
         title: "Junior Frontend Developer",
-        company: "Truescope",
+        company: "Truescope Australia",
+        short_company_name: "Truescope Australia",
         period: "Feb 2022 - July 2023",
         description: "Frontend development with focus on mobile-first approach",
+        companyLogo: truescopeLogo,
         location: "Australia",
         responsibilities: [
             "Develop with mobile-first and test-driven development approach",
@@ -81,8 +94,10 @@ const experiences = [
         id: 5,
         title: "Trainee Software Developer",
         company: "_nology",
+        short_company_name: "_nology",
         period: "Sept 2021 - Dec 2021",
         description: "Intensive software development training program",
+        companyLogo: nologyLogo,
         location: "Australia",
         responsibilities: [
             "Develop responsive web applications",

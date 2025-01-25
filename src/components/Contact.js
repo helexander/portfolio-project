@@ -41,7 +41,7 @@ const Contact = () => {
                         </a>
 
                         <a
-                            href="https://github.com/jeremychee97"
+                            href="https://github.com/helexander"
                             className="contact-link github"
                             target="_blank"
                             rel="noopener noreferrer"

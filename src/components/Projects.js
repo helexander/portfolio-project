@@ -24,6 +24,12 @@ const Projects = () => {
                 >
                     Web Applications
                 </button>
+                <button
+                    onClick={() => handleTabChange('Others')}
+                    className={selectedTab === 'Others' ? 'active' : ''}
+                >
+                    Others
+                </button>
             </div>
 
             {selectedTab === 'Scripts' && (
@@ -31,6 +37,9 @@ const Projects = () => {
             )}
             {selectedTab === 'Web Applications' && (
                 <ProjectList category="Web Applications" />
+            )}
+            {selectedTab === 'Others' && (
+                <ProjectList category="Others" />
             )}
         </main>
     )

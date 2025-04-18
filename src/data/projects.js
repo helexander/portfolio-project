@@ -37,7 +37,6 @@ const projects = [
         category: "Others",
         title: "Mobile Poll Simulator",
         description: "A mobile application that emulates the functionality of a polling system, allowing users to create, participate in, and analyze polls in real-time. This app replicates the essential features of web-based polling platforms in a mobile-friendly format, providing an intuitive interface for poll creation and response collection.",
-        link: "https://yourportfolio.netlify.app"
     },
     {
         id: 7,
@@ -45,6 +44,12 @@ const projects = [
         title: "Interactive Dev Portfolio",
         description: "A modern, responsive web portfolio showcasing my journey as a Data Operations Executive and Software Engineer. Built with React and featuring smooth animations, this portfolio highlights my professional experience, certifications, and projects while demonstrating my frontend development skills through its clean design and interactive elements.",
         link: "https://github.com/helexander/portfolio-project"
+    },
+    {
+        id: 8,
+        category: "Others",
+        title: "Email-to-WhatsApp Automation Script (via Zapier Integration)",
+        description: "A JavaScript script that integrates with Zapier and 2Chat to automate the conversion of incoming emails into WhatsApp messages. The script monitors a specific inbox for new emails, extracts key information such as the sender, subject, and main content, and reformats it for clarity. Once processed, the message is sent via 2Chat to a designated WhatsApp contact or group",
     },
 ];
 

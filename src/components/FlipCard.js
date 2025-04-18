@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/FlipCard.scss';
 
 const FlipCard = ({ project }) => {
+    console.log('project link: ', project.link)
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleClick = () => {
@@ -24,14 +25,15 @@ const FlipCard = ({ project }) => {
                 </div>
                 <div className="flip-card-back">
                     <p>{project.description}</p>
-                    <a
+                    {project.link && <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={handleLinkClick}
                     >
                         View Project
-                    </a>
+                    </a>}
+
                 </div>
             </div>
         </div>
